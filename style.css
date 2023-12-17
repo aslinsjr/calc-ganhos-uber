@@ -1,0 +1,125 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, black, grey);
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+#header-container {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+}
+
+#header-container h1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#header-container img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+/* Formulário */
+#form-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+}
+
+input {
+    margin: 0.3rem 0;
+    color: white;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+input:focus {
+    outline: 0;
+}
+
+input[type=number] {
+    max-width: 150px;
+    padding: 0.5rem 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.281);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+input[type=number]::placeholder {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#submit-btn {
+    background-color: white;
+    color: rgb(71, 69, 69);
+    text-transform: uppercase;
+    font-weight: 900;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+#submit-btn:hover {
+    opacity: 1;
+}
+
+/* Resultados */
+.result-container {
+    opacity: 0;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid rgba(248, 246, 246, 0.432);
+    margin: 1rem 0;
+    padding: 1rem;
+    min-height: 120px ;
+}
+
+.result-left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+.active{
+    opacity: 1;
+}

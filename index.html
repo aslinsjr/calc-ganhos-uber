@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoPiloto</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header-container">
+        <h1>Calculadora de Ganhos Semananais</h1>
+        <img src="img/logo-uber-moto.webp" alt="Logo Uber Moto">
+    </header>
+    <main id="main-container">
+        <form id="form-container">
+            <input type="number" id="horas-trabalhadas" placeholder="Horas Trabalhadas">
+            <input type="number" id="numero-viagens" placeholder="Número de Viagens">
+            <input type="number" id="valor-recebido" placeholder="Valor Recebido">
+            <input type="submit" id="submit-btn" value="Calcular">
+        </form>
+    </main>
+    
+    <div class="result-container">
+        <div class="results" id="duracao-media-container">
+            <div class="result-left-side">
+                <p>A duração média das corridas foi de</p>
+                <span id="duracao-media-viagem"></span>
+            </div>
+            <div class="result-right-side">
+
+            </div>
+        </div>
+        <div class="results" id="valor-hora-container">
+            <div class="result-left-side">
+                <p>O valor por hora trabalhada foi de</p>
+                <span id="valor-hora"></span>
+            </div>
+            <div class="result-right-side">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
